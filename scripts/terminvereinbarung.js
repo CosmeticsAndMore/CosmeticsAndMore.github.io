@@ -1,3 +1,36 @@
+window.onresize = resize;
+
+function initForm() {
+	var size = {
+		width: window.innerWidth || document.body.clientWidth,
+		height: window.innerHeight || document.body.clientHeight
+	}
+
+	if (size.width < 900) {
+		document.getElementById("details").removeAttribute("open");
+	}
+
+	resize();
+}
+
+function resize() {
+	// auto expand for big browsers
+	var size = {
+		width: window.innerWidth || document.body.clientWidth,
+		height: window.innerHeight || document.body.clientHeight
+	}
+
+	if (size.width < 900) {
+		document.getElementById("summary").style.display = "block";
+
+		// resize map
+		var mapElement = document.getElementById("map");
+	} else {
+		document.getElementById("details").setAttribute("open", "");
+		document.getElementById("summary").style.display = "none";
+	}
+}
+
 function getNextWorkingDate() {
 	var day = new Date();
 	var daysTilNextWorkingDay = 1;
@@ -14,6 +47,8 @@ function getHumanReadableDate(dateString) {
 }
 
 function onload() {
+	initForm();
+
 	var today = getNextWorkingDate();
 	var dd = today.getDate();
 	var mm = today.getMonth()+1; //January is 0!
