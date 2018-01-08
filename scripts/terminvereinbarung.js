@@ -17,7 +17,7 @@ function getHumanReadableDate(dateString) {
 
 	if(dd<10) {
 	    dd='0'+dd
-	} 
+	}
 
 	if(mm<10) {
 	    mm='0'+mm
@@ -34,7 +34,7 @@ function onload() {
 
 	if(dd<10) {
 	    dd='0'+dd
-	} 
+	}
 
 	if(mm<10) {
 	    mm='0'+mm
@@ -69,16 +69,9 @@ function sendMail() {
 		return;
 	}
 
-	if (!mail || mail === "") {
+	if ((!mail || mail === "") && (!number || number === "")) {
 		mailElement.className = "error";
 		mailElement.focus();
-			
-		return;
-	}
-
-	if (!number || number === "") {
-		numberElement.className = "error";
-		numberElement.focus();
 
 		return;
 	}
@@ -89,38 +82,44 @@ function sendMail() {
 
 		return;
 	}
-	
+
 	var kontakt = "";
 
 	if (message && !(message === "")) {
 		kontakt = escape("\n\n--------------------------------------------------------------------\n")
-		+ escape("Name: \t\t\"")
-		+ unescape(name) 
-		+ escape("\"\nRufnummer: \t\"") 
-		+ number 
-		+ escape("\"\nE-mail: \t\t\"") 
-		+ mail
-		+ escape("\"\nDatum: \t\t\"") 
-		+ document.getElementsByName('date')[0].value
-		+ escape("\"\nUhrzeit: \t\t\"") 
-		+ document.getElementsByName('time')[0].value
-		+ escape("\"\n--------------------------------------------------------------------")
-		;
+			+ escape("Name: \t\t\"")
+			+ unescape(name);
+		if (!(!number || number === "")) {
+			kontakt = kontakt + escape("\"\nRufnummer: \t\"") + number
+		}
+		kontakt = kontakt
+			+ escape("\"\nE-mail: \t\t\"")
+			+ mail
+			+ escape("\"\nDatum: \t\t\"")
+			+ document.getElementsByName('date')[0].value
+			+ escape("\"\nUhrzeit: \t\t\"")
+			+ document.getElementsByName('time')[0].value
+			+ escape("\"\n--------------------------------------------------------------------");
 	} else {
 		kontakt = escape("Sehr geehrte Frau Thurand,\n\nhiermit m") + unescape("ö") + escape("chte ich bei Ihnen einen Termin am ")
-		+ getHumanReadableDate(document.getElementsByName('date')[0].value)
-		+ " um "
-		+ document.getElementsByName('time')[0].value
-		+ " Uhr ausmachen. Bitte informieren sie mich ob das m" + unescape("ö") + "glich ist. Sie erreichen mich per Telefon unter "
-		+ number
-		+ " oder unter meiner E-mail: " 
-		+ mail
-		+ escape(". Vielen Dank im Voraus.\n\nMit freundlichen Gr")
-		+ unescape("üß")
-		+ escape("en,\n")
-		+ unescape(name)
-		+ escape("\n");
-		;
+			+ getHumanReadableDate(document.getElementsByName('date')[0].value)
+			+ " um "
+			+ document.getElementsByName('time')[0].value
+			+ " Uhr ausmachen. Bitte informieren sie mich ob das m" + unescape("ö") + "glich ist. Sie erreichen mich ";
+		if (!(!number || number === "")) {
+			kontakt = kontakt
+				+ "per Telefon unter "
+				+ number
+				+ " oder ";
+	  }
+		kontakt = kontakt
+			+ "unter meiner E-mail: "
+			+ mail
+			+ escape(". Vielen Dank im Voraus.\n\nMit freundlichen Gr")
+			+ unescape("üß")
+			+ escape("en,\n")
+			+ unescape(name)
+			+ escape("\n");
 	}
 
 	var link = "mailto:cosmetics_and_more@me.com"
