@@ -237,7 +237,7 @@ textarea.error {
 	}
 
 	#map {
-		width: 47vw;
+		width: 95%;
 		height: 650px;
 		margin: 2% 2% 0 2%;
 		display: inline-block;
