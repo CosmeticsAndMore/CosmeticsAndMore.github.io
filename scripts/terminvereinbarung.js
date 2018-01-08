@@ -10,20 +10,7 @@ function getNextWorkingDate() {
 }
 
 function getHumanReadableDate(dateString) {
-	var date = new Date(dateString);
-	var dd = date.getDate();
-	var mm = date.getMonth()+1; //January is 0!
-	var yyyy = date.getFullYear();
-
-	if(dd<10) {
-	    dd='0'+dd
-	}
-
-	if(mm<10) {
-	    mm='0'+mm
-	}
-
-	return dd + "." + mm + "." + yyyy;
+	return dateString;
 }
 
 function onload() {
@@ -40,7 +27,7 @@ function onload() {
 	    mm='0'+mm
 	}
 
-	today = yyyy + "-" + mm + "-" + dd;
+	today = dd + "." + mm + "." + yyyy;
 	document.getElementsByName('date')[0].value = today;
 }
 
