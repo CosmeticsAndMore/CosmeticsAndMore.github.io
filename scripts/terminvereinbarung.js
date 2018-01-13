@@ -62,7 +62,7 @@ function onload() {
 	    mm='0'+mm
 	}
 
-	today = dd + "." + mm + "." + yyyy;
+	today = yyyy + "-" + mm + "-" + dd;
 	document.getElementsByName('date')[0].value = today;
 }
 
