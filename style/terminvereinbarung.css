@@ -1,41 +1,5 @@
 /* Spanish-Rose: #882D6A; */
 /* Green: #8FBF59; */
-#form {
-	animation: appearUp 0.7s ease forwards;
-	visibility: visible !important;
-}
-
-#data {
-	animation: appearUp 0.7s ease forwards;
-	visibility: visible !important;
-}
-
-#form summary {
-	font-size: 150%;
-	display: block;
-	outline: none;
-}
-
-#form summary:hover {
-	color: #8FBF59;
-	transition: color 0.3s;
-}
-
-#form summary::-webkit-details-marker {
-    color: #882D6A;
-    font-size: 100%;
-}
-
-#form ul {
-	list-style: none;
-}
-
-#form p {
-	margin-bottom: 6px;
-	margin-top: 20px;
-	font-size: 150%;
-}
-
 #kontakt {
 	text-align: center;
 }
@@ -50,103 +14,6 @@
 	line-height: 20pt;
 }
 
-input {
-	padding: 10px;
-	border: solid 1px #8FBF59;
-	font-size: 17pt;
-	transition: box-shadow 0.5s, border 0.5s;
-}
-
-input:focus {
-	border: solid 1px #882D6A;
-	box-shadow: 0 0 5px 1px #969696;
-	outline: none;
-}
-
-input.error {
-	border: solid 2px red;
-}
-
-textarea {
-	padding: 10px;
-	border: solid 1px #8FBF59;
-	font-size: 17pt;
-	transition: box-shadow 0.5s, border 0.5s;
-}
-
-textarea:focus {
-	border: solid 1px #882D6A;
-	box-shadow: 0 0 5px 1px #969696;
-	outline: none;
-}
-
-textarea.error {
-	border: solid 2px red;
-}
-
-#button {
-	display: inline-block;
-	background-color: #8FBF59;
-	color: white;
-
-	outline: none;
-	border-radius: 8px;
-	border: none;
-
-	text-align: center;
-	text-decoration: none;
-	font-size: 16pt;
-
-	padding: 15px 32px;
-	margin-top: 30px;
-
-	/* hover animation stuff */
-  cursor: pointer;
-}
-
-#button span {
-	cursor: pointer;
-	display: inline-block;
-	position: relative;
-	transition: padding-right 0.5s, right 0.5s, opacity 0.5s, content 0.5s;
-}
-
-#button span:after {
-	content: '»';
-	position: absolute;
-	opacity: 0;
-	top: 0;
-	right: -20px;
-	transition: padding-right 0.5s, right 0.5s, opacity 0.5s, content 0.5s;
-}
-
-#button:hover span {
-	padding-right: 25px;
-}
-
-#button:hover span:after {
-	opacity: 1;
-	right: 0;
-}
-
-#button:hover {
-	background-color: #882D6A;
-	color: white;
-	border: none;
-	outline: none;
-}
-
-#button:active {
-	background-color: gray;
-	color: white;
-	border: none;
-	outline: none;
-}
-
-#bigInput {
-	height: 300px;
-}
-
 #map {
 	overflow: hidden;
 	border-style: groove;
@@ -155,32 +22,6 @@ textarea.error {
 
 /* low width */
 @media screen and (min-width: 1px) and (max-width: 899px) {
-	#form {
-		margin: 20px 5% 0 5%;
-		padding: 10px 10px 10px 10px;
-		width: auto;
-
-		border-style: solid;
-		border-width: 2px;
-		border-color: #882D6A;
-	}
-
-	#button {
-		max-width: 899px;
-		width: 100%;
-		margin-left: 0 auto 0 auto;
-	}
-
-	#bigInput {
-		max-width: 899px;
-		width: 100%;
-	}
-
-	input {
-		max-width: 899px;
-		width: 100%;
-	}
-
 	#kontakt {
 		margin: 30px 0px 0px 0px;
 	}
@@ -196,42 +37,14 @@ textarea.error {
 
 /* medium and large screens */
 @media screen and (min-width: 900px) {
-	#form {
-		margin: 10px 0.5% 0 2%;
-		padding: 10px 0px 10px 10px;
-		width: 47.5%;
-
-		overflow: auto;
-		display: inline-block;
-		float: left;
-	}
-
-	#button {
-		max-width: unset;
-		width: 97%;
-		margin: 30px 1% 0 1%;
-	}
-
-	#bigInput {
-		max-width: unset;
-		width: 98%;
-	}
-
-	input {
-		max-width: unset;
-		width: 98%;
-	}
-
 	#kontakt {
 		margin-top: 30px 0 0 3%;
 	}
 
 	#data {
-		display: inline-block;
-		float: right;
 		overflow: auto;
 
-		width: 47.5%;
+		width: 95.5%;
 		margin: 20px 2% 0 0.5%;
 		padding-top: 10px;
 	}

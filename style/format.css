@@ -200,10 +200,6 @@ a:active {
 	margin: 1em 1px 1px 1px;
 }
 
-#imp {
-	display: none;
-}
-
 /* ==============================================
    Navigation element, default browser experience
    ==============================================*/
@@ -480,7 +476,7 @@ a:active {
 		margin-top: 10px;
 		margin-left: auto;
 		margin-right: auto;
-		width: 1300px;
+		width: 1400px;
 	}
 
 	nav img {
@@ -496,7 +492,7 @@ a:active {
 		margin-left: 15px;
 		padding-top: 57px;
 		float: left;
-		width: 1070px;
+		width: 1100px;
 
 		border-bottom-width: 0.4cm;
 		border-bottom-style: solid;
@@ -506,7 +502,7 @@ a:active {
 	nav li {
 		display: inline;
 		margin-left: 20px;
-		font-size: 16pt;
+		font-size: 14pt;
 		line-height: 24pt;
 	}
 }

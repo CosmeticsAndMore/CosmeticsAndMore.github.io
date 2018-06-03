@@ -29,8 +29,6 @@
 		<meta name="msapplication-config" content="icons/browserconfig.xml">
 		<meta name="theme-color" content="#ffffff">
 
-		<script src="scripts/terminvereinbarung.js"></script>
-
 		<!-- Google Search stuff -->
 		<meta name="Description" content="Vereinbaren Sie bequem online einen Termin."/>
 		<link rel="alternate" hreflang="de-DE" href="http://www.cosmetics-and-more.de/" />
@@ -61,43 +59,10 @@
 					<li><a href="galerie.html">GALERIE</a></li>
 					<li><a href="kosmetikleistungen.html">KOSMETIK LEISTUNGEN</a></li>
 					<li><a href="friseurleistungen.html">FRISEUR LEISTUNGEN</a></li>
-					<li><a href="terminvereinbarung.html" class="active">KONTAKT</a></li>
-					<li><a href="impressum.html" id="imp">IMPRESSUM</a></li>
+					<li><a href="terminvereinbarung.html" class="active">KONTAKT UND ANFAHRT</a></li>
 				</ul>
 			</nav>
-
 			<div class="content" onclick="document.getElementById('navigation').checked=false;">
-				<div id="form">
-					<details id="details"><summary id="summary">Hier klicken, um online einen Termin zu vereinbaren</summary>
-						<form>
-							<ul>
-								<li><p>Ihr Name</p><input type="text" name="name" placeholder="Max Mustermann"></li>
-								<li><p>Ihre E-mail Adresse</p><input type="email" name="mail" placeholder="mustermann.max@beispiel.de"></li>
-								<li><p>Ihre Rufnummer</p><input type="tel" name="rufnummer" placeholder="+49 152 38520427"></li>
-								<li><p>Datum</p><input type="date" name="date" value="1970-01-01"></li>
-								<li><p>Uhrzeit</p><input type="time" name="time" value="13:00"></li>
-								<li><p>Betreff</p><input type="text" name="betreff" value="Termin vereinbaren"></li>
-								<li><p>Ihre Nachricht (Optional)</p><textarea cols="40" rows="5" id="bigInput" name="nachricht" placeholder="Bitte beschreiben Sie Ihr Anliegen detailiert. Sollten Sie dieses Feld leer lassen wird automatisch eine Nachricht aus den oben eingegebenen Daten generiert."></textarea></li>
-							</ul>
-							<button type="submit" id="button" onclick="sendMail(); return false"><span>NACHRICHT SENDEN </span></button>
-						</form>
-					</details>
-				</div>
-				<script type="text/javascript">
-					onload();
-				</script>
-
-				<!-- Edge browser is a piece of shit. Detect and act accordingly ;D -->
-				<script type="text/javascript">
-					// Detect edge
-					if (window.navigator.userAgent.indexOf("Edge") > -1) {
-						document.getElementById("summary").style.display = "none";
-						document.getElementById("form").style.border = "none";
-						document.getElementById("form").style.padding.top = "0px";
-					}
-				</script>
-
-
 				<div id="data">
 					<div id="kontakt">
 						<h2>Kontaktdaten:</h2>
