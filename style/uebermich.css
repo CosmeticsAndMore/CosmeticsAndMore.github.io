@@ -1,4 +1,4 @@
-p {
+#profileDescription p {
 	text-align: justify;
 }
 
@@ -9,7 +9,7 @@ p {
 
 /* very small displays */
 @media screen and (max-width: 599px) {
-	p {
+	#profileDescription p {
 		font-size: 5vw;
 		line-height: 6vw;
 	}
@@ -38,7 +38,7 @@ p {
 
 /* Small displays */
 @media screen and (min-width: 600px) and (max-width: 899px) {
-	p {
+	#profileDescription p {
 		font-size: 17pt;
 		line-height: 20pt;
 	}
@@ -68,7 +68,7 @@ p {
 
 /* Medium displays */
 @media screen and (min-width: 900px) and (max-width: 1299px) {
-	p {
+	#profileDescription p {
 		font-size: 17pt;
 		line-height: 20pt;
 	}
@@ -96,7 +96,7 @@ p {
 
 /* large screens */
 @media screen and (min-width: 1300px) {
-	p {
+	#profileDescription p {
 		font-size: 17pt;
 		line-height: 22pt;
 	}
