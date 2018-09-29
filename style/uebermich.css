@@ -1,4 +1,4 @@
-#profileDescription p {
+p {
 	text-align: justify;
 }
 
@@ -9,7 +9,7 @@
 
 /* very small displays */
 @media screen and (max-width: 599px) {
-	#profileDescription p {
+	p {
 		font-size: 5vw;
 		line-height: 6vw;
 	}
@@ -38,7 +38,7 @@
 
 /* Small displays */
 @media screen and (min-width: 600px) and (max-width: 899px) {
-	#profileDescription p {
+	p {
 		font-size: 17pt;
 		line-height: 20pt;
 	}
@@ -68,7 +68,7 @@
 
 /* Medium displays */
 @media screen and (min-width: 900px) and (max-width: 1299px) {
-	#profileDescription p {
+	p {
 		font-size: 17pt;
 		line-height: 20pt;
 	}
@@ -96,7 +96,7 @@
 
 /* large screens */
 @media screen and (min-width: 1300px) {
-	#profileDescription p {
+	p {
 		font-size: 17pt;
 		line-height: 22pt;
 	}
