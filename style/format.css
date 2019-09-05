@@ -109,6 +109,8 @@
        font-size: 30px;
        font-weight: bold;
        text-align: center;
+       /* Hide banner */
+       display: none;
 }
 
 #banner p {
