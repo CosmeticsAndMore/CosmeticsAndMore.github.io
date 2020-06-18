@@ -205,6 +205,13 @@ a:active {
 	overflow: auto;
 }
 
+.new-feature {
+	font-size: 30px;
+	text-align: center;
+  margin: 1em;
+  color: green;
+}
+
 .footer {
 	border: dashed 2px #882D6A;
 	font-size: 20px;
