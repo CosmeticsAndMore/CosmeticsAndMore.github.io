@@ -110,7 +110,7 @@
        font-weight: bold;
        text-align: center;
        /* Hide banner */
-       /* display: none; */
+       display: none;
 }
 
 #banner p {
