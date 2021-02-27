@@ -1,158 +1,293 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>Leistungen | Cosmetics and More</title>
-		<link href="style/kosmetikleistungen.css" rel="stylesheet" type="text/css">
-		<link href="style/format.css" rel="stylesheet" type="text/css">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Leistungen | Cosmetics and More</title>
+    <link
+      href="style/kosmetikleistungen.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="style/format.css" rel="stylesheet" type="text/css" />
 
-		<!-- Favicon stuff -->
-		<link rel="apple-touch-icon" sizes="57x57" href="icons/apple-touch-icon-57x57.png">
-		<link rel="apple-touch-icon" sizes="60x60" href="icons/apple-touch-icon-60x60.png">
-		<link rel="apple-touch-icon" sizes="72x72" href="icons/apple-touch-icon-72x72.png">
-		<link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon-76x76.png">
-		<link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114x114.png">
-		<link rel="apple-touch-icon" sizes="120x120" href="icons/apple-touch-icon-120x120.png">
-		<link rel="apple-touch-icon" sizes="144x144" href="icons/apple-touch-icon-144x144.png">
-		<link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152x152.png">
-		<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon-180x180.png">
-		<link rel="icon" type="image/png" href="icons/favicon-32x32.png" sizes="32x32">
-		<link rel="icon" type="image/png" href="icons/favicon-194x194.png" sizes="194x194">
-		<link rel="icon" type="image/png" href="icons/favicon-96x96.png" sizes="96x96">
-		<link rel="icon" type="image/png" href="icons/android-chrome-192x192.png" sizes="192x192">
-		<link rel="icon" type="image/png" href="icons/favicon-16x16.png" sizes="16x16">
-		<link rel="manifest" href="icons/manifest.json">
-		<link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#8fbf59">
-		<link rel="shortcut icon" href="icons/favicon.ico">
-		<meta name="msapplication-TileColor" content="#da532c">
-		<meta name="msapplication-TileImage" content="icons/mstile-144x144.png">
-		<meta name="msapplication-config" content="icons/browserconfig.xml">
-		<meta name="theme-color" content="#ffffff">
+    <!-- Favicon stuff -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="icons/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="icons/apple-touch-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="icons/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="icons/apple-touch-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="icons/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="icons/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="icons/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="icons/apple-touch-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="icons/apple-touch-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="icons/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="icons/favicon-194x194.png"
+      sizes="194x194"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="icons/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="icons/android-chrome-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="icons/favicon-16x16.png"
+      sizes="16x16"
+    />
+    <link rel="manifest" href="icons/manifest.json" />
+    <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#8fbf59" />
+    <link rel="shortcut icon" href="icons/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-TileImage" content="icons/mstile-144x144.png" />
+    <meta name="msapplication-config" content="icons/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
 
-		<!-- Google Search stuff -->
-		<meta name="Description" content="Verschaffen Sie sich hier einen Überblick über mein Dienstleistungsangebot."/>
-		<link rel="alternate" hreflang="de-DE" href="http://www.cosmetics-and-more.de/" />
+    <!-- Google Search stuff -->
+    <meta
+      name="Description"
+      content="Verschaffen Sie sich hier einen Überblick über mein Dienstleistungsangebot."
+    />
+    <link
+      rel="alternate"
+      hreflang="de-DE"
+      href="http://www.cosmetics-and-more.de/"
+    />
 
-		<!-- Size adjustements for mobile -->
-		<meta name=viewport content="width=device-width, initial-scale=1">
-	</head>
-	<body>
-		<div id="cookies-eu-banner" style="display: none;">
-			Diese Website möchte Cookies von Google Analytics verwenden, um Ihr Nutzererlebnis zu verbessern.
-			Nähere Informationen finden Sie in den <a href="impressum.html">Datenschutzbestimmungen</a>.
-			<br>
-			<button id="cookies-eu-reject">Verbieten</button>
-			<button id="cookies-eu-accept">Ich bin damit einverstanden</button>
-		</div>
+    <!-- Size adjustements for mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <div id="cookies-eu-banner" style="display: none">
+      Diese Website möchte Cookies von Google Analytics verwenden, um Ihr
+      Nutzererlebnis zu verbessern. Nähere Informationen finden Sie in den
+      <a href="impressum.html">Datenschutzbestimmungen</a>.
+      <br />
+      <button id="cookies-eu-reject">Verbieten</button>
+      <button id="cookies-eu-accept">Ich bin damit einverstanden</button>
+    </div>
 
-		<div class="page">
-			<input class="menuinput" type="checkbox" id="navigation" />
-			<label class="menulabel" for="navigation">≡</label>
-			<div class="bar">
-				<h1>Cosmetics And More</h1>
-			</div>
-			<nav>
-				<a href="index.html"><img id="logo" src="img/logo.jpg"></a>
-				<ul>
-					<li><a href="index.html">STARTSEITE</a></li>
-					<li><a href="uebermich.html">ÜBER MICH</a></li>
-					<li><a href="galerie.html">GALERIE</a></li>
-					<li><a href="kosmetikleistungen.html" class="active">KOSMETIK LEISTUNGEN</a></li>
-					<li><a href="friseurleistungen.html">FRISEUR LEISTUNGEN</a></li>
-					<li><a href="terminvereinbarung.html">KONTAKT UND ANFAHRT</a></li>
-				</ul>
-			</nav>
+    <div class="page">
+      <input class="menuinput" type="checkbox" id="navigation" />
+      <label class="menulabel" for="navigation">≡</label>
+      <div class="bar">
+        <h1>Cosmetics And More</h1>
+      </div>
+      <nav>
+        <a href="index.html"><img id="logo" src="img/logo.jpg" /></a>
+        <ul>
+          <li><a href="index.html">STARTSEITE</a></li>
+          <li><a href="uebermich.html">ÜBER MICH</a></li>
+          <li><a href="galerie.html">GALERIE</a></li>
+          <li>
+            <a href="kosmetikleistungen.html" class="active"
+              >KOSMETIK LEISTUNGEN</a
+            >
+          </li>
+          <li><a href="friseurleistungen.html">FRISEUR LEISTUNGEN</a></li>
+          <li><a href="terminvereinbarung.html">KONTAKT UND ANFAHRT</a></li>
+        </ul>
+      </nav>
 
-			<div class="content" onclick="document.getElementById('navigation').checked=false;">
-                                <div id="banner">
-                                       <p>
-                                          Bitte beachten Sie, dass ich vom 3. August 2020 bis zum 19. August 2020
-                                          im Urlaub bin. Für Terminanfragen und sonstige Anliegen bin ich in diesem
-                                          Zeitraum nicht erreichbar.
-                                       </p>
-                                </div>
+      <div
+        class="content"
+        onclick="document.getElementById('navigation').checked=false;"
+      >
+        <div id="banner">
+          <p>
+            Bitte beachten Sie, dass ich vom 3. August 2020 bis zum 19. August
+            2020 im Urlaub bin. Für Terminanfragen und sonstige Anliegen bin ich
+            in diesem Zeitraum nicht erreichbar.
+          </p>
+        </div>
 
-				<div class="new-feature">
-					<b>NEU! Bequem kontaktlos bei mir im Studio bezahlen</b>
-				</div>
+        <div class="new-feature">
+          <b>NEU! Bequem kontaktlos bei mir im Studio bezahlen</b>
+        </div>
 
-				<div class="angebote">
-					<div class="box">
-						<h2 class="twoline">Gesichtsbehandlung - Klassisch</h2>
-						<p class="dauer">ca. 70min</p><p class="preis">51,-€</p>
-						<p class="description">
-							Reinigung, Hautanalyse, Peeling, Entfernung von Unreinheiten,
-							Augenbrauenkorrektur, Wirkstoffpackung, Gesicht-, Hals und
-							Dekolletemassage, Ampulle, Tagescreme.
-						</p>
-					</div>
-					<div class="box">
-						<h2 id="rueckenmassage">Klassische Rückenmassage mit Peeling</h2>
-						<p class="dauer">ca. 40min</p><p class="preis">42,-€</p>
-						<p class="description">
-							Die Massage dient der Lockerung der Muskulatur, entspannt und
-							beruhigt. Durch den Einsatz von natürlichen Ölen wird die Haut
-							gepflegt.
-						</p>
-					</div>
-					<div class="box">
-						<h2 class="oneline">Handpflege</h2>
-						<p class="dauer">Maniküre</p><p class="preis">14,-€</p>
-						<ul class="pflege">
-							<li>Mit Handmassage <p class="preis">20,-€</p></li>
-							<li>Mit Naturlack oder Polieren <p class="preis">17,-€</p></li>
-							<li>Mit Farblack <p class="preis">20,-€</p></li>
-							<li>Mit Shellac (hält ca. 14 Tage) <p class="preis">30,-€</p></li>
-						</ul>
-					</div>
-					<div class="box">
-						<h2 class="oneline">Fusspflege</h2>
-						<p class="dauer">Pediküre</p><p class="preis">20,-€</p>
-						<ul class="pflege">
-							<li>Mit Fussmassage <p class="preis">25,-€</p></li>
-							<li>Mit Naturlack oder polieren<p class="preis">22,-€</p></li>
-							<li>Mit Farblack<p class="preis">24,-€</p></li>
-							<li>Mit Shellac <p class="preis">30,-€</p></li>
-						</ul>
-					</div>
-					<div class="box">
-						<h2 class="twoline">Haarentfernung mit Warmwachs</h2>
-						<ul>
-							<li>Unterschenkel<p class="preis">20,-€</p></li>
-							<li>Oberschenkel<p class="preis">23,-€</p></li>
-							<li>Beine komplett<p class="preis">36,-€</p></li>
-							<li>Oberlippe<p class="preis">7,-€</p></li>
-						</ul>
-					</div>
-					<div class="box">
-						<h2>Sonstiges</h2>
-						<p class="preis">jeweils 6,-€</p>
-						<ul>
-							<li>Augenbrauen Färben</li>
-							<li>Wimpern Färben</li>
-							<li>Augenbrauenkorrektur</li>
-						</ul>
-					</div>
-				</div>
-			</div>
+        <div class="angebote">
+          <div class="box">
+            <h2 class="twoline">Gesichtsbehandlung - Klassisch</h2>
+            <p class="dauer">ca. 70min</p>
+            <p class="preis">53,-€</p>
+            <p class="description">
+              Reinigung, Hautanalyse, Peeling, Entfernung von Unreinheiten,
+              Augenbrauenkorrektur, Wirkstoffpackung, Gesicht-, Hals und
+              Dekolletemassage, Ampulle, Tagescreme.
+            </p>
+          </div>
+          <div class="box">
+            <h2 id="rueckenmassage">Klassische Rückenmassage mit Peeling</h2>
+            <p class="dauer">ca. 40min</p>
+            <p class="preis">44,-€</p>
+            <p class="description">
+              Die Massage dient der Lockerung der Muskulatur, entspannt und
+              beruhigt. Durch den Einsatz von natürlichen Ölen wird die Haut
+              gepflegt.
+            </p>
+          </div>
+          <div class="box">
+            <h2 class="oneline">Handpflege</h2>
+            <p class="dauer">Maniküre</p>
+            <p class="preis">16,-€</p>
+            <ul class="pflege">
+              <li>
+                Mit Handmassage
+                <p class="preis">22,-€</p>
+              </li>
+              <li>
+                Mit Naturlack oder Polieren
+                <p class="preis">19,-€</p>
+              </li>
+              <li>
+                Mit Farblack
+                <p class="preis">22,-€</p>
+              </li>
+              <li>
+                Mit Shellac (hält ca. 14 Tage)
+                <p class="preis">32,-€</p>
+              </li>
+            </ul>
+          </div>
+          <div class="box">
+            <h2 class="oneline">Fusspflege</h2>
+            <p class="dauer">Pediküre</p>
+            <p class="preis">22,-€</p>
+            <ul class="pflege">
+              <li>
+                Mit Fussmassage
+                <p class="preis">27,-€</p>
+              </li>
+              <li>
+                Mit Naturlack oder polieren
+                <p class="preis">24,-€</p>
+              </li>
+              <li>
+                Mit Farblack
+                <p class="preis">26,-€</p>
+              </li>
+              <li>
+                Mit Shellac
+                <p class="preis">32,-€</p>
+              </li>
+            </ul>
+          </div>
+          <div class="box">
+            <h2 class="twoline">Haarentfernung mit Warmwachs</h2>
+            <ul>
+              <li>
+                Unterschenkel
+                <p class="preis">22,-€</p>
+              </li>
+              <li>
+                Oberschenkel
+                <p class="preis">25,-€</p>
+              </li>
+              <li>
+                Beine komplett
+                <p class="preis">38,-€</p>
+              </li>
+              <li>
+                Oberlippe
+                <p class="preis">9,-€</p>
+              </li>
+            </ul>
+          </div>
+          <div class="box">
+            <h2>Sonstiges</h2>
+            <p class="preis">jeweils 8,-€</p>
+            <ul>
+              <li>Augenbrauen Färben</li>
+              <li>Wimpern Färben</li>
+              <li>Augenbrauenkorrektur</li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-			<div class="footer">
-				<a href="impressum.html">Impressum und Datenschutz</a>
-			</div>
-		</div>
+      <div class="footer">
+        <a href="impressum.html">Impressum und Datenschutz</a>
+      </div>
+    </div>
 
-		<!-- Cookie consent for google analytics -->
-		<script src="./scripts/cookies-eu-banner.js"></script>
-		<script>
-			new CookiesEuBanner(function(){
-				(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-				})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    <!-- Cookie consent for google analytics -->
+    <script src="./scripts/cookies-eu-banner.js"></script>
+    <script>
+      new CookiesEuBanner(function () {
+        (function (i, s, o, g, r, a, m) {
+          i["GoogleAnalyticsObject"] = r;
+          (i[r] =
+            i[r] ||
+            function () {
+              (i[r].q = i[r].q || []).push(arguments);
+            }),
+            (i[r].l = 1 * new Date());
+          (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+          a.async = 1;
+          a.src = g;
+          m.parentNode.insertBefore(a, m);
+        })(
+          window,
+          document,
+          "script",
+          "https://www.google-analytics.com/analytics.js",
+          "ga"
+        );
 
-				ga('create', 'UA-76142203-1', 'auto');
-				ga('send', 'pageview');
-			}, true);
-		</script>
-	</body>
+        ga("create", "UA-76142203-1", "auto");
+        ga("send", "pageview");
+      }, true);
+    </script>
+  </body>
 </html>
